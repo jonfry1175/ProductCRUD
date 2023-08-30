@@ -11,6 +11,7 @@ function CreateProduct() {
   const navigate = useNavigate();
 
   const [name, setName] = useState("");
+  const [status, setStatus] = useState('');
   const [price, setPrice] = useState('');
   const [stock, setStock] = useState('');
   const [image, setImage] = useState("");
@@ -24,6 +25,7 @@ function CreateProduct() {
           name,
           price,
           stock,
+          status,
           image,
           BrandId: 7,
           CategoryId: 7
@@ -33,6 +35,7 @@ function CreateProduct() {
       setImage("")
       setStock("")
       setPrice("")
+      setStatus('')
       Swal.fire(
         'product created',
         'product has been added to list',
@@ -81,6 +84,15 @@ function CreateProduct() {
               <label>Price</label>
               <input
                 onChange={(e) => setPrice(e.target.value)}
+                type="text"
+                className="form-control"
+                placeholder="Input price"
+              ></input>
+            </div>
+            <div className="mb-3">
+              <label>status</label>
+              <input
+                onChange={(e) => setStatus(e.target.value)}
                 type="text"
                 className="form-control"
                 placeholder="Input price"

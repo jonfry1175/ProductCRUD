@@ -76,6 +76,7 @@ const Product = () => {
                     <div className="card-body">
                       <h5 className="card-title">{product.name}</h5>
                       <p className="card-text">Price: Rp. {product.price}</p>
+                      <p className="card-text">status  {product.status}</p>
                       <p className="card-text">Stock: {product.stock}</p>
                       <button onClick={() => deleteProduct(product.id)} className='btn btn-sm btn-danger'>DELETE</button>
                       <Link

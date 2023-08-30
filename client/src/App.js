@@ -14,10 +14,6 @@ import {
   UpdateProduct
 } from './pages/product'
 
-import Brand from './pages/brand/Brand';
-import Category from './pages/category/Category';
-
-
 function App() {
   return (
     <div className='main-page container-fluid'>
@@ -31,8 +27,6 @@ function App() {
               <Route path='products' element={<Product/>}/>
               <Route path="products/create" element={<CreateProduct />}/>
               <Route path="products/update/:id" element={<UpdateProduct />}/>
-              <Route path='brands' element={<Brand/>}/>
-              <Route path='categories' element={<Category/>}/>
             </Route>
         </Routes>
       </BrowserRouter>

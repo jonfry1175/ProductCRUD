@@ -19,12 +19,12 @@ const MenuBar = () => {
                         <li class="nav-item">
                             <Link class="nav-link" to="/products">Products</Link>
                         </li>
-                        <li class="nav-item">
+                        {/* <li class="nav-item">
                             <Link class="nav-link" to="/brands">Brands</Link>
                         </li>
                         <li class="nav-item">
                             <Link class="nav-link" to="/categories">Categories</Link>
-                        </li>
+                        </li> */}
                     </ul>
                 </div>
             </div>
